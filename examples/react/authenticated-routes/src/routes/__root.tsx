@@ -8,7 +8,7 @@ interface MyRouterContext {
   auth: AuthContext
 }
 
-export const Route = createRootRouteWithContext<MyRouterContext>()({
+export const Route = createRootRouteWithContext<undefined, MyRouterContext>()({
   component: () => (
     <>
       <Outlet />
